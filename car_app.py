@@ -6,10 +6,10 @@ pipe = pickle.load(open('Car_prediction_LR_model.pkl','rb'))
 df = pd.read_csv('Cleaned car.csv')
 
 st.title('Car price Predictior')
-# print(df.head())
+st.write("Enter the following details to get the predictive selling price of your old car")
 
 # name
-name = st.selectbox("Car Brand",df['name'].unique())
+name = st.selectbox("Car Model",df['name'].unique())
 
 # company
 company = st.selectbox("Company",df['company'].unique())
