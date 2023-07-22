@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import pandas as pd
-import numpy as np
 
 pipe = pickle.load(open('Car_prediction_LR_model.pkl','rb'))
 df = pd.read_csv('Cleaned car.csv')
