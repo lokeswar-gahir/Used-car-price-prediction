@@ -5,7 +5,7 @@ import pandas as pd
 pipe = pickle.load(open('Car_prediction_LR_model.pkl','rb'))
 df = pd.read_csv('Cleaned car.csv')
 
-st.title('Car price Predictior')
+st.title('Car price Predictor')
 st.write("Enter the following details to get the predictive selling price of your old car")
 
 # company
